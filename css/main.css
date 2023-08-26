@@ -96,6 +96,7 @@ a {
 
 .preview {
   display: flex;
+	margin-bottom: 100px;
 }
 
 .preview__images {
@@ -105,4 +106,4 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+} 
