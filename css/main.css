@@ -96,7 +96,8 @@ a {
 
 .preview {
   display: flex;
-	margin-bottom: 100px;
+	margin-bottom: 100px
+;
 }
 
 .preview__images {
@@ -106,4 +107,31 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-} 
+}
+
+.content__episodes {
+  display: flex;
+	justify-content: space-between;
+	height: 99px;
+}
+
+.content__episodes-title {
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 79.2px; /* 123.75% */
+	letter-spacing: 2.88px;
+	margin: 0;
+}
+
+.content__episodes-button {
+	margin-top: 25px;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px; /* 158.824% */
+	border-radius: 6px;
+	background-color: #118DA8;
+	width: 178px;
+	height: 51px;
+}
