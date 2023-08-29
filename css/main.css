@@ -111,6 +111,7 @@ a {
 .content__episodes {
   display: flex;
   justify-content: space-between;
+	align-items: center;
   height: 99px;
   margin-bottom: 40px;
 }
@@ -124,25 +125,25 @@ a {
   margin: 0;
 }
 
-.content__episodes-button {
-  margin-top: 25px;
+.content__episodes-link {
+	margin-top: 25px;
+}
+
+.btn{
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 158.824% */
   border-radius: 6px;
   background-color: #118da8;
-  width: 178px;
-  height: 51px;
+	height: fit-content;
+	padding: 12px 20px;
 }
 
 .episode__card {
   margin-bottom: 260px;
 }
 
-.episode__card-3,
-.episode__card-2,
-.episode__card-1 {
+.episode__card-inner{
   display: flex;
   background-color: black;
   border-radius: 32px;
@@ -154,23 +155,16 @@ a {
   margin-bottom: 0;
 }
 
-.episode__card-image-3 {
+.episode__card-image {
   width: 389px;
   height: 465px;
 }
 
-.episode__card-image-2,
-.episode__card-image-1 {
-  width: 389px;
-  height: 475px;
-}
-
 .episode__card-content {
-  padding-left: 53px;
+  margin-left: 53px;
 }
 
-.btn-card-3,
-.btn-card-1 {
+.episode__card-btn {
   color: #fff;
   font-size: 18px;
   font-style: normal;
@@ -178,27 +172,12 @@ a {
   line-height: 27px; /* 150% */
   border-radius: 6px;
   background-color: #191919;
-  width: 73px;
-  height: 27px;
   margin-bottom: 48px;
+	padding: 0 16px;
+	border: none;
 }
 
-.btn-card-2 {
-  width: 136px;
-  height: 27px;
-  color: #fff;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px; /* 158.824% */
-  border-radius: 6px;
-  background: #191919;
-  margin-bottom: 48px;
-}
-
-.p-episode-3,
-.p-episode-2,
-.p-episode-1 {
+.episode__p {
   color: #118da8;
   font-size: 17px;
   font-style: normal;
@@ -208,7 +187,7 @@ a {
   margin-bottom: 15px;
 }
 
-.episode-title-3 {
+.episode__title {
   color: #fff;
   font-size: 64px;
   font-size: 64px;
@@ -221,28 +200,7 @@ a {
   margin-bottom: 28px;
 }
 
-.episode-title-2 {
-  color: #fff;
-  width: 676px;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 70.4px; /* 110% */
-  letter-spacing: 2.56px;
-}
-
-.episode-title-1 {
-  color: #fff;
-  font-size: 57px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 70.4px; /* 123.509% */
-  letter-spacing: 2.56px;
-}
-
-.p-episode-text-3,
-.p-episode-text-2,
-.p-episode-text-1 {
+.episode__p-text {
   color: rgba(255, 255, 255, 0.7);
   font-size: 22px;
   font-style: normal;
@@ -253,23 +211,19 @@ a {
   margin-bottom: 30px;
 }
 
-.bnt-episode__details-3,
-.bnt-episode__details-2,
-.bnt-episode__details-1 {
+.episode__btn-details {
   color: #fff;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 27px; /* 150% */
-  border-radius: 6px;
-  background: #118da8;
-  width: 208px;
-  height: 51px;
+	display: block;
+	margin-top: auto;
+	width: fit-content;
 }
 
 .biography {
   display: flex;
   justify-content: space-between;
+	align-items: center;
 }
 
 .biography__text {
@@ -278,14 +232,16 @@ a {
   height: 448px;
 }
 
-.biography__text-next {
-  width: 38px;
-  height: 71px;
+.biography__text-button {
   transform: rotate(-90deg);
   width: 112px;
   height: 112px;
   border-radius: 50%;
+	border: none;
   background: #118da8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -295,17 +251,18 @@ a {
   border-radius: 12px;
 }
 
-.biography-description {
+.biography__description {
   color: #118da8;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 150% */
+	margin: 0;
 }
 
 .biography__name {
   color: #fff;
-
+	margin: 0;
   font-size: 65px;
   font-style: normal;
   font-weight: 400;
@@ -314,12 +271,12 @@ a {
   padding-bottom: 28px;
 }
 
-.biogrpaphy__text-1,
-.biogrpaphy__text-2 {
+.biogrpaphy__text{
   color: rgba(255, 255, 255, 0.7);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px; /* 150% */
   padding-bottom: 33px;
+	margin: 0;
 }
